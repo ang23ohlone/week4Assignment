@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Anais Ng — Portfolio</title>
+</head>
+<body>
+  <!-- Site Header with Nav -->
+  <header>
+    <div class="container">
+  <h1>Anais Ng</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#film">Film</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <!-- Keep only one H1 on the page for hierarchy -->
+        <h2 id="hero-title">Visual Storyteller | Director &amp; Media Strategist</h2>
+        <p><a href="#contact">Contact</a></p>
+        <figure>
+          <img src="images/hero.jpg" alt="Anais at the seaside rocks" />
+          <figcaption>Portfolio hero image</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Me</h2>
+        <div class="about-layout">
+          <figure>
+            <img src="images/about.jpg" alt="Anais holding a plush toy on a hill" />
+            <figcaption>Portrait</figcaption>
+          </figure>
+          <div>
+            <p>Anais Ng is a storyteller at the intersection of visual media, cultural identity, and community.</p>
+            <p>Her directing and editing style thrives on collaboration and authenticity…</p>
+            <p>When not creating, she explores the worlds of beauty, fashion, and lifestyle…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILM -->
+    <section id="film" aria-labelledby="film-title">
+      <div class="container">
+        <h2 id="film-title">Film</h2>
+
+        <article class="film-item">
+          <h3>The Story of Spliff Passé</h3>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/tyt8VP2oFXU"
+              title="The Story of Spliff Passé (YouTube)"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="film-item">
+          <h3>United in Movement Illuminate 2025 MV Teaser 1</h3>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/pxhoFsiWHsE"
+              title="United in Movement Illuminate 2025 MV Teaser 1 (YouTube)"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="film-item">
+          <h3>Stuck</h3>
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/lNJF1nY5QjA"
+              title="Stuck (YouTube)"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title">Gallery</h2>
+        <div class="gallery-grid">
+          <img src="images/g1.jpg" alt="Gallery image 1" />
+          <img src="images/g2.jpg" alt="Gallery image 2" />
+          <img src="images/g3.jpg" alt="Gallery image 3" />
+          <img src="images/g4.jpg" alt="Gallery image 4" />
+          <img src="images/g5.jpg" alt="Gallery image 5" />
+          <img src="images/g6.jpg" alt="Gallery image 6" />
+          <img src="images/g7.jpg" alt="Gallery image 7" />
+          <img src="images/g8.jpg" alt="Gallery image 8" />
+          <img src="images/g9.jpg" alt="Gallery image 9" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact Me</h2>
+        <ul>
+          <li><strong>Phone:</strong> +1 510-386-8923</li>
+          <li><strong>Email:</strong> <a href="mailto:ang48@calpoly.edu">ang48@calpoly.edu</a></li>
+          <li><strong>More Work:</strong> <a href="https://drive.google.com/your-folder" target="_blank" rel="noopener">Google Drive</a></li>
+          <li>
+            <strong>Social:</strong>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="https://youtube.com/@yourchannel" target="_blank" rel="noopener">YouTube</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <p>© <span id="year"></span> Anais Ng</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
